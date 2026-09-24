@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "decision": "PASS_FINAL_EXPLAINER_FROZEN",
+  "q3b_q3c_prerequisites": true,
+  "baseline_frozen_NEUTRAL_ZERO": true,
+  "bert_clean_replay_passed": true,
+  "bert_cosine_median": 0.9999999780645983,
+  "valid_coverage_728": true,
+  "text_audio_vision_all_finite": true,
+  "corrected_local_not_degenerate": true,
+  "natural_zero_idempotence_max": 0.0,
+  "faithfulness_not_below_q3c_conclusion": true,
+  "checkpoint_unchanged": true,
+  "training": false,
+  "attachment3_read": false,
+  "attachment4_formal_inference": false,
+  "allow_Q3E": true
+}

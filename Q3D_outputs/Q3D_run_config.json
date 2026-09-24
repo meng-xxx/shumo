@@ -1,0 +1,76 @@
+{
+  "stage": "Q3D_FinalExplainer_Freeze_EvidenceValidation",
+  "timestamp": "2026-09-24T23:02:36.249991",
+  "config": {
+    "data_root": "D:\\Desktop\\shumo\\E题数据",
+    "repo_root": "D:\\Desktop\\shumo",
+    "q2_source_relative": "Q2\\Q2D_R2_AV_MultiGap_train_robust_model.py",
+    "q3c_source_relative": "Q3\\Q3C_LocalAttribution_Faithfulness_BaselineSelection.py",
+    "q1_mapping_relative": "Q1\\Q1Final_word_anchored_100_v2.py",
+    "output_relative": "Q3D_outputs",
+    "seed": 2026,
+    "bert_model": "bert-base-uncased",
+    "bert_batch_size": 64,
+    "r2_batch_size": 256,
+    "text_windows": [
+      1,
+      2,
+      3
+    ],
+    "av_windows": [
+      1,
+      3,
+      5
+    ],
+    "nms_candidates": [
+      0.3,
+      0.5,
+      0.7
+    ],
+    "max_intervals": 3,
+    "interval_quantile": 0.75,
+    "topk_ratios": [
+      0.1,
+      0.2,
+      0.3
+    ],
+    "random_repeats": 20,
+    "a": 0.8,
+    "b": 0.009049484133720337,
+    "bert_cosine_median_min": 0.999
+  },
+  "environment": {
+    "python": "3.10.21 | packaged by Anaconda, Inc. | (main, Aug 27 2026, 14:35:39) [MSC v.1942 64 bit (AMD64)]",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "torch": "2.9.1+cu128",
+    "transformers": "5.17.0",
+    "device": "cuda",
+    "gpu": "NVIDIA GeForce RTX 5060 Ti"
+  },
+  "input_sha256": {
+    "attachment2": "66e867aa74bc70a844e806e5571e371c9abb4a35f9e2887ce9b4d97ff2cb8fcd",
+    "normalization": "74cd2807f7661742721b96d889255a9e1bf82403a0979c7bacd4d1578dfaaa63",
+    "bert_cache": "4acd6022a30b99d65354e52cccfe1d8d51d8fb94d729bea5a811d6c750282874",
+    "checkpoint": "512515504e0e8a266cb3ef403a7f1aff5275d2df4fd572ccef3d519ebcb824aa",
+    "calibration": "5f4f33a4d0f58418f2bdc0b7c2cecfc008a8a0db4001ed50db2b5bbbae211448",
+    "q3b_gate": "c209286532bbb6a6692da294ee15574d061fad5f3562a090a60af6d2b94069f8",
+    "q3c_gate": "0cc98be2403ebf1d588af6bf2559ad0aeb4cd8aa2976b272e49ca9522f1aec79",
+    "q3c_main_zero": "5b23b8f6406c0de97d8cc1f7b6a49f48456c51ad87d91550a2b57065b5530ce1",
+    "q3c_main_missing": "647eb42d3346e004a4804e58ec6db7408ed83b427fc528fce81a339286d6b398",
+    "q3c_local_zero": "79eff3c701787b092a986f0d904d2a0cf98ebc4093fd3d7ac712ba420665171e",
+    "q3c_faith_zero": "52ed98a140d06e39900ef20ef71d7b0238bbe1fd03739b6915e650e487e62c8a",
+    "q3b_reproduction": "5de7b8d7bcb3a202d6a30cd0eb2cfc76375080daa5492c170725f6083052f8ba",
+    "q3b_zero_audit": "78c48675cf4d64f1980bd150719cec2ae4f4832d18db42eb017460cecfce77ae",
+    "q2_source": "9ad58d24f40d920a37d568a81369a8151f107abe07e4c5b88cb6f946f8771282",
+    "q3c_source": "5188cd4e9116ed68ef9812c884043e42fc68093518624bbb08d70d84fd86198a",
+    "q1_mapping": "4135baa44b1b3739aec15762fd449c259f34eb9800ad8875b62b0c5005ae2026"
+  },
+  "runtime_seconds": 120.7979736328125,
+  "valid_samples": 728,
+  "restrictions": {
+    "attachment2_split": "valid only",
+    "attachment3": false,
+    "attachment4_formal_inference": false,
+    "training": false
+  }
+}

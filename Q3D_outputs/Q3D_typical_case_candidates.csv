@@ -1,0 +1,9 @@
+﻿candidate_type,sample_index,sample_id,true_class,pred_class,main_modality,baseline_agreement,explanation_stability,natural_zero_vision
+Text_dominant,670,tQ-CIfgj-Js$_$3,Neutral,Neutral,T,True,High,True
+Audio_dominant,510,aK5tRCXjUvU$_$0,Positive,Positive,A,True,Moderate,False
+Vision_dominant,498,_gzYkdjNvPc$_$12,Positive,Neutral,V,False,Low,False
+baseline_agree,163,31474$_$9,Negative,Negative,T,True,Moderate,False
+baseline_disagree,725,zjYEBwXGD8I$_$4,Neutral,Neutral,T,False,Low,True
+natural_zero_vision,227,80855$_$15,Positive,Positive,T,True,High,True
+Negative_strong,62,216097$_$1,Negative,Negative,T,True,High,False
+Neutral_or_Positive_distributed,276,CPjbogfLHR4$_$5,Positive,Positive,A,False,Moderate,False

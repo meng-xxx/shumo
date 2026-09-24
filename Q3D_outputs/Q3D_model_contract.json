@@ -1,0 +1,10 @@
+{
+  "model": "Q2D-R2-AV-MultiGap + Global Affine Calibration",
+  "model_eval": true,
+  "bert_eval": true,
+  "gradients_disabled": true,
+  "checkpoint_sha256_before": "512515504e0e8a266cb3ef403a7f1aff5275d2df4fd572ccef3d519ebcb824aa",
+  "checkpoint_sha256_after": "512515504e0e8a266cb3ef403a7f1aff5275d2df4fd572ccef3d519ebcb824aa",
+  "native_zero_is_missing": false,
+  "attention_or_gate_as_truth": false
+}

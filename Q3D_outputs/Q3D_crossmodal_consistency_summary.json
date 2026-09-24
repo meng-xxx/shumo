@@ -1,0 +1,10 @@
+{
+  "n": 728,
+  "top1_agreement": 0.7554945054945055,
+  "mean_spearman": 0.6023351648351648,
+  "mean_l1": 0.4501018759811567,
+  "mean_pearson_aux": 0.6926779305965453,
+  "nondegenerate_fraction": 1.0,
+  "baseline_frozen": "NEUTRAL_ZERO",
+  "baseline_reselected": false
+}
