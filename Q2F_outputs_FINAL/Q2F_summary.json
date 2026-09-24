@@ -1,0 +1,89 @@
+{
+  "stage": "Q2F",
+  "status": "PASS",
+  "timestamp": "2026-09-24T17:23:45.292308",
+  "contracts": {
+    "model_training": false,
+    "pseudo_labels": false,
+    "attachment3_label_use": false,
+    "checkpoint": "D:\\Desktop\\shumo\\E题数据\\Q2D_R2_AV_MultiGap_outputs\\checkpoints\\Q2D_R2_AV_MultiGap_best_model.pt",
+    "global_calibration": "D:\\Desktop\\shumo\\E题数据\\Q2E_outputs\\Q2E_F1\\Q2E_F1_global_calibration.json",
+    "final_mask_policy": "auto",
+    "native_zero_automatically_missing": false,
+    "derived_mask_fallback_if_no_explicit_mask": "terminal-aware: last attended position excluded only from missing detection; joint A+V zero rows plus unilateral zero runs >= 2 within the remaining detection range"
+  },
+  "sample_count": 30,
+  "class_counts": {
+    "Negative": 9,
+    "Neutral": 11,
+    "Positive": 10
+  },
+  "intensity": {
+    "mean": 0.11402649422486615,
+    "std": 0.5518404320082301,
+    "min": -1.0339192658662797,
+    "max": 1.3606119841337203
+  },
+  "calibration": {
+    "a": 0.8,
+    "b": 0.009049484133720337,
+    "formula": "clip(a * raw_R2_regression + b, -3, 3)"
+  },
+  "bert_gate": {
+    "status": "PASS",
+    "samples": 4,
+    "max_abs_error": 0.020874500274658203,
+    "mean_abs_error": 0.00028936986927874386,
+    "correlation": 0.9999996287472483,
+    "thresholds": {
+      "max_abs_tol": 0.025,
+      "mean_abs_tol": 0.003,
+      "corr_min": 0.9995
+    },
+    "bert_model": "bert-base-uncased"
+  },
+  "terminal_mask_gate": {
+    "status": "PASS",
+    "terminal_attended_position_excluded_from_missing_detection": true,
+    "terminal_audio_all_zero_count": 30,
+    "terminal_vision_all_zero_count": 30,
+    "mean_audited_audio_missing_rate": 0.254818895821133,
+    "mean_audited_vision_missing_rate": 0.25784919885143603,
+    "mean_model_audio_missing_rate": 0.24096395806429796,
+    "mean_model_vision_missing_rate": 0.2439051345348862
+  },
+  "checkpoint_meta": {
+    "epoch": 7,
+    "checkpoint_keys": [
+      "stage",
+      "timestamp",
+      "epoch",
+      "selection_score",
+      "clean_valid_metrics",
+      "missing_valid_metrics",
+      "model_state_dict",
+      "optimizer_state_dict",
+      "config"
+    ]
+  },
+  "mask_audit": {
+    "samples_with_explicit_mask": 0,
+    "samples_using_derived_mask": 30,
+    "terminal_attended_position_excluded_from_missing_detection": true,
+    "terminal_audio_all_zero_count": 30,
+    "terminal_vision_all_zero_count": 30,
+    "mean_audio_missing_rate": 0.254818895821133,
+    "mean_vision_missing_rate": 0.25784919885143603,
+    "mean_model_audio_missing_rate": 0.24096395806429796,
+    "mean_model_vision_missing_rate": 0.2439051345348862
+  },
+  "outputs": {
+    "final_predictions": "Q2F_final_predictions.csv",
+    "submission": "Q2F_submission.csv",
+    "mask_audit": "Q2F_mask_audit.csv",
+    "sensitivity_predictions": "Q2F_sensitivity_predictions.csv",
+    "sensitivity_summary": "Q2F_sensitivity_summary.csv",
+    "bert_embeddings": "Q2F_attachment3_bert_embeddings.npy",
+    "terminal_mask_gate": "Q2F_terminal_mask_gate.json"
+  }
+}

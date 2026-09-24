@@ -1,0 +1,4 @@
+﻿reference,comparison_policy,classification_agreement,mean_abs_intensity_difference,max_abs_intensity_difference,class_changed_samples
+final_mask_policy,all_observed,0.9666666666666667,0.034858703613281264,0.24062499999999998,1
+final_mask_policy,joint_zero_only,1.0,0.0002636718749999998,0.007910156249999994,0
+final_mask_policy,q2a_candidate,1.0,0.0,0.0,0
