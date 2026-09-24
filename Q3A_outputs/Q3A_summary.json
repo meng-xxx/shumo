@@ -1,0 +1,106 @@
+{
+  "stage": "Q3A",
+  "status": "WARN",
+  "final_q2_model": "Q2D-R2-AV-MultiGap + Global Affine Calibration",
+  "attachment4": {
+    "feature_discovery": {
+      "mode": "auto",
+      "explicit_dir": null,
+      "selected_dir": "D:\\Desktop\\shumo\\E题数据\\附件4-可解释专项视频样本与特征文件\\附件4-可解释专项视频样本与特征文件\\对齐版本",
+      "candidate_directories": {
+        "D:\\Desktop\\shumo\\E题数据\\附件4-可解释专项视频样本与特征文件\\附件4-可解释专项视频样本与特征文件\\对齐版本": 20,
+        "D:\\Desktop\\shumo\\E题数据\\附件4-可解释专项视频样本与特征文件\\附件4-可解释专项视频样本与特征文件\\未对齐版本": 20
+      }
+    },
+    "video_discovery": {
+      "explicit_dir": null,
+      "mode": "auto",
+      "searched_roots": [
+        "D:\\Desktop\\shumo\\E题数据\\附件4-可解释专项视频样本与特征文件\\附件4-可解释专项视频样本与特征文件\\对齐版本"
+      ],
+      "video_count": 20
+    },
+    "feature_files_found": 20,
+    "feature_files_pass": 20,
+    "expected_count": 20,
+    "unique_sample_ids": 20,
+    "duplicate_ids": [],
+    "label_like_field_samples": 0,
+    "suspicious_native_zero_run_samples": 1,
+    "content_length": {
+      "min": 13,
+      "median": 30.0,
+      "mean": 30.2,
+      "max": 50
+    },
+    "videos_found": 20,
+    "videos_paired": 20,
+    "mapping_ready": 20
+  },
+  "model_contract": {
+    "checkpoint": "D:\\Desktop\\shumo\\E题数据\\Q2D_R2_AV_MultiGap_outputs\\checkpoints\\Q2D_R2_AV_MultiGap_best_model.pt",
+    "normalization": "D:\\Desktop\\shumo\\E题数据\\Q2B_outputs\\Q2B_normalization_stats.npz",
+    "calibration_path": "D:\\Desktop\\shumo\\E题数据\\Q2E_outputs\\Q2E_F1\\Q2E_F1_global_calibration.json",
+    "calibration_artifact_parsed": false,
+    "calibration_a": 0.8,
+    "calibration_b": 0.009049484,
+    "regression_formula": "clip(a * raw_R2_regression + b, -3, 3)"
+  },
+  "q3a_rules": {
+    "training": false,
+    "prediction": false,
+    "pseudo_labels": false,
+    "attachment4_metrics": false,
+    "native_zero_treated_as_missing": false,
+    "label_values_used": false
+  },
+  "environment": {
+    "python": "3.10.21 | packaged by Anaconda, Inc. | (main, Aug 27 2026, 14:35:39) [MSC v.1942 64 bit (AMD64)]",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "ffmpeg": null,
+    "ffprobe": null,
+    "torch": {
+      "available": true,
+      "version": "2.9.1+cu128"
+    },
+    "transformers": {
+      "available": true,
+      "version": "5.17.0"
+    },
+    "opencv": {
+      "available": true,
+      "version": "4.11.0"
+    },
+    "local_bert_tokenizer": {
+      "available": true,
+      "name_or_path": "bert-base-uncased",
+      "vocab_size": 30522
+    }
+  },
+  "gate": {
+    "stage": "Q3A",
+    "status": "WARN",
+    "hard_failures": [],
+    "warnings": [
+      "A calibration artifact was found but its schema could not be parsed automatically. Q3A still uses the already-frozen Q2 final coefficients a=0.8, b=0.009049484.",
+      "1 samples contain A/V all-zero runs of length >= 3 inside text-defined valid positions. Per the frozen Q2 contract, native numerical zero != missing; these are reported for audit only and are NOT converted into missing masks."
+    ],
+    "checks": {
+      "expected_feature_count": true,
+      "all_feature_files_loaded": true,
+      "all_core_shapes_pass": true,
+      "all_core_finite_pass": true,
+      "all_text_interfaces_pass": true,
+      "unique_sample_ids": true,
+      "all_videos_paired": true,
+      "all_mapping_prereqs_ready": true,
+      "final_r2_checkpoint_exists": true,
+      "normalization_exists": true,
+      "global_affine_calibration_frozen": true,
+      "attachment4_prediction_executed": false,
+      "pseudo_labels_generated": false
+    }
+  }
+}

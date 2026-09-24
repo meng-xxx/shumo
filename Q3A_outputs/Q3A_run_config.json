@@ -1,0 +1,58 @@
+{
+  "stage": "Q3A",
+  "generated": "2026-09-24T17:45:12",
+  "argv": [
+    "D:\\Desktop\\shumo\\Q3\\Q3A_attachment4_interface_audit_v2.py"
+  ],
+  "config": {
+    "data_root": "D:\\Desktop\\shumo\\E题数据",
+    "q2_model_name": "Q2D-R2-AV-MultiGap + Global Affine Calibration",
+    "q2_checkpoint_relative": "Q2D_R2_AV_MultiGap_outputs\\checkpoints\\Q2D_R2_AV_MultiGap_best_model.pt",
+    "normalization_relative": "Q2B_outputs\\Q2B_normalization_stats.npz",
+    "global_affine_a": 0.8,
+    "global_affine_b": 0.009049484,
+    "calibration_tolerance": 1e-10,
+    "expected_attachment4_count": 20,
+    "seq_len": 50,
+    "text_dim": 768,
+    "audio_dim": 74,
+    "vision_dim": 35,
+    "long_zero_run_warn": 3,
+    "zero_eps": 0.0,
+    "hash_videos": true,
+    "output_relative": "Q3A_outputs"
+  },
+  "resolved": {
+    "data_root": "D:\\Desktop\\shumo\\E题数据",
+    "output_dir": "D:\\Desktop\\shumo\\E题数据\\Q3A_outputs",
+    "checkpoint": "D:\\Desktop\\shumo\\E题数据\\Q2D_R2_AV_MultiGap_outputs\\checkpoints\\Q2D_R2_AV_MultiGap_best_model.pt",
+    "normalization": "D:\\Desktop\\shumo\\E题数据\\Q2B_outputs\\Q2B_normalization_stats.npz",
+    "calibration": "D:\\Desktop\\shumo\\E题数据\\Q2E_outputs\\Q2E_F1\\Q2E_F1_global_calibration.json",
+    "feature_dir": "D:\\Desktop\\shumo\\E题数据\\附件4-可解释专项视频样本与特征文件\\附件4-可解释专项视频样本与特征文件\\对齐版本"
+  },
+  "environment": {
+    "python": "3.10.21 | packaged by Anaconda, Inc. | (main, Aug 27 2026, 14:35:39) [MSC v.1942 64 bit (AMD64)]",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "ffmpeg": null,
+    "ffprobe": null,
+    "torch": {
+      "available": true,
+      "version": "2.9.1+cu128"
+    },
+    "transformers": {
+      "available": true,
+      "version": "5.17.0"
+    },
+    "opencv": {
+      "available": true,
+      "version": "4.11.0"
+    },
+    "local_bert_tokenizer": {
+      "available": true,
+      "name_or_path": "bert-base-uncased",
+      "vocab_size": 30522
+    }
+  }
+}

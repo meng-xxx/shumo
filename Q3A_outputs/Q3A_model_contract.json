@@ -1,0 +1,69 @@
+{
+  "final_q2_model": "Q2D-R2-AV-MultiGap + Global Affine Calibration",
+  "backbone": "Q2D-R2-AV-MultiGap",
+  "checkpoint": {
+    "path": "D:\\Desktop\\shumo\\E题数据\\Q2D_R2_AV_MultiGap_outputs\\checkpoints\\Q2D_R2_AV_MultiGap_best_model.pt",
+    "exists": true,
+    "size_bytes": 14530447,
+    "size_mb": 13.857314109802246,
+    "mtime": "2026-09-24T10:28:34",
+    "sha256": "512515504e0e8a266cb3ef403a7f1aff5275d2df4fd572ccef3d519ebcb824aa"
+  },
+  "normalization": {
+    "path": "D:\\Desktop\\shumo\\E题数据\\Q2B_outputs\\Q2B_normalization_stats.npz",
+    "exists": true,
+    "size_bytes": 1902,
+    "size_mb": 0.0018138885498046875,
+    "mtime": "2026-09-23T20:19:00",
+    "sha256": "74cd2807f7661742721b96d889255a9e1bf82403a0979c7bacd4d1578dfaaa63"
+  },
+  "global_affine_calibration": {
+    "selection_mode": "frozen_q2_contract+auto_artifact_audit",
+    "contract_source": "Q2 final frozen Global Affine Calibration",
+    "path": "D:\\Desktop\\shumo\\E题数据\\Q2E_outputs\\Q2E_F1\\Q2E_F1_global_calibration.json",
+    "exists": true,
+    "parsed": false,
+    "artifact_matches_frozen_contract": null,
+    "a": 0.8,
+    "b": 0.009049484,
+    "formula": "y_cal = clip(a * y_raw + b, -3, 3)",
+    "source_location": "frozen_q2_contract",
+    "sha256": "5f4f33a4d0f58418f2bdc0b7c2cecfc008a8a0db4001ed50db2b5bbbae211448",
+    "error": "",
+    "candidate_files": [
+      "D:\\Desktop\\shumo\\E题数据\\Q2E_outputs\\Q2E_F1\\Q2E_F1_global_calibration.json",
+      "D:\\Desktop\\shumo\\E题数据\\Q2E_outputs\\Q2E_F1\\Q2E_F1_calibration_oof_coefficients.csv",
+      "D:\\Desktop\\shumo\\E题数据\\Q2E_outputs\\Q2E_F1\\Q2E_F1_calibration_missing_plan.csv",
+      "D:\\Desktop\\shumo\\E题数据\\Q2E_outputs\\Q2E_F1\\Q2E_F1_bootstrap_clean_calibrated.csv",
+      "D:\\Desktop\\shumo\\E题数据\\Q2E_outputs\\Q2E_F1\\Q2E_F1_bootstrap_Q2C2_calibrated.csv"
+    ],
+    "candidate_scores": [
+      {
+        "score": 17,
+        "path": "D:\\Desktop\\shumo\\E题数据\\Q2E_outputs\\Q2E_F1\\Q2E_F1_global_calibration.json"
+      },
+      {
+        "score": 10,
+        "path": "D:\\Desktop\\shumo\\E题数据\\Q2E_outputs\\Q2E_F1\\Q2E_F1_calibration_oof_coefficients.csv"
+      },
+      {
+        "score": 10,
+        "path": "D:\\Desktop\\shumo\\E题数据\\Q2E_outputs\\Q2E_F1\\Q2E_F1_calibration_missing_plan.csv"
+      },
+      {
+        "score": 10,
+        "path": "D:\\Desktop\\shumo\\E题数据\\Q2E_outputs\\Q2E_F1\\Q2E_F1_bootstrap_clean_calibrated.csv"
+      },
+      {
+        "score": 10,
+        "path": "D:\\Desktop\\shumo\\E题数据\\Q2E_outputs\\Q2E_F1\\Q2E_F1_bootstrap_Q2C2_calibrated.csv"
+      }
+    ],
+    "artifact_parse_error": "Multiple distinct (a,b) pairs found: [('Q2B', 0.956, -0.05632367736101148), ('Q2D_R2', 0.8, 0.009049484133720337)]",
+    "artifact_parsed": false,
+    "artifact_source_location": ""
+  },
+  "classification_contract": "R2 classifier logits/class decision; affine calibration does not modify classification logits.",
+  "regression_contract": "final y = clip(a * raw_R2_regression + b, -3, 3)",
+  "q3a_prediction_executed": false
+}
