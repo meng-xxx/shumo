@@ -1,0 +1,16 @@
+{
+  "model": "Q2D-R2-AV-MultiGap + Global Affine Calibration",
+  "model_eval": true,
+  "gradients_disabled": true,
+  "strict_checkpoint_load": true,
+  "missing_keys": [],
+  "unexpected_keys": [],
+  "native_numerical_zero_is_missing": false,
+  "calibration_source_key": "Q2D_R2",
+  "a": 0.8,
+  "b": 0.009049484133720337,
+  "final_regression": "clip(0.8 * y_raw + 0.009049484133720337, -3, 3)",
+  "formal_shapley_regression_value": "0.8 * y_raw + 0.009049484133720337 (unclipped)",
+  "calibration_exact_contract_ok": true,
+  "path_contract_ok": true
+}

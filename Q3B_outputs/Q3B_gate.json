@@ -1,0 +1,16 @@
+{
+  "decision": "PASS_BOTH_FEASIBLE_NEEDS_Q3C",
+  "passed": true,
+  "reproduction_passed": true,
+  "all_8_coalitions_ran": true,
+  "all_numeric_finite": true,
+  "shapley_efficiency_passed": true,
+  "neutral_zero_idempotence_passed": true,
+  "efficiency_tolerance": 1e-05,
+  "zero_idempotence_tolerance": 1e-07,
+  "selection_caution": true,
+  "zero_nonempty_singleton_class_collapse_ge_0_98": true,
+  "low_AB_full_rank_agreement_lt_0_5": true,
+  "candidate_primary_semantics": "NEUTRAL-ZERO: input information contribution",
+  "auxiliary_semantics": "R2-MISSING: modality availability-state sensitivity"
+}

@@ -1,0 +1,45 @@
+{
+  "passed": true,
+  "calibration_contract_ok": true,
+  "path_contract_ok": true,
+  "checkpoint_strict_load_ok": true,
+  "model_eval": true,
+  "gradients_disabled": true,
+  "tolerance": 1e-05,
+  "splits": [
+    {
+      "split": "valid",
+      "passed": true,
+      "ids_equal": true,
+      "class_ids_exact": true,
+      "raw_regression_max_abs_error": 7.654467337747661e-17,
+      "probability_max_abs_error": 1.1102230246251565e-16,
+      "metric_abs_errors": {
+        "accuracy": 0.0,
+        "macro_f1": 0.0,
+        "mae": 9.476974760502799e-09,
+        "pearson": 0.0
+      },
+      "q2e_raw_max_abs_error": 7.654467337747661e-17,
+      "q2e_calibration_comparison": "not_comparable_prior_is_5fold_oof_current_is_global",
+      "q2e_calibrated_max_abs_error": null
+    },
+    {
+      "split": "test",
+      "passed": true,
+      "ids_equal": true,
+      "class_ids_exact": true,
+      "raw_regression_max_abs_error": 8.760353553682876e-17,
+      "probability_max_abs_error": 1.1102230246251565e-16,
+      "metric_abs_errors": {
+        "accuracy": 0.0,
+        "macro_f1": 0.0,
+        "mae": 4.3043244191132146e-08,
+        "pearson": 0.0
+      },
+      "q2e_raw_max_abs_error": 8.760353553682876e-17,
+      "q2e_calibration_comparison": "global_affine_vs_global_affine",
+      "q2e_calibrated_max_abs_error": 2.220446049250313e-16
+    }
+  ]
+}

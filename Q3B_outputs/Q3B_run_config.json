@@ -1,0 +1,103 @@
+{
+  "stage": "Q3B_FrozenFinal_Reproduction_CoalitionAudit",
+  "timestamp": "2026-09-24T18:08:41.195205",
+  "config": {
+    "data_root": "D:\\Desktop\\shumo\\E题数据",
+    "q2_source": "D:\\Desktop\\shumo\\Q2\\Q2D_R2_AV_MultiGap_train_robust_model.py",
+    "attachment2_relative": "附件2-数据集特征文件\\aligned_50.pkl",
+    "q2b_relative": "Q2B_outputs",
+    "r2_relative": "Q2D_R2_AV_MultiGap_outputs",
+    "calibration_relative": "Q2E_outputs\\Q2E_F1\\Q2E_F1_global_calibration.json",
+    "output_relative": "Q3B_outputs",
+    "checkpoint_name": "checkpoints\\Q2D_R2_AV_MultiGap_best_model.pt",
+    "normalization_name": "Q2B_normalization_stats.npz",
+    "seed": 2026,
+    "batch_size": 64,
+    "reproduction_tolerance": 1e-05,
+    "efficiency_tolerance": 1e-05,
+    "zero_idempotence_tolerance": 1e-07,
+    "expected_a": 0.8,
+    "expected_b": 0.009049484133720337,
+    "calibration_tolerance": 1e-15
+  },
+  "resolved_paths": {
+    "attachment2": "D:\\Desktop\\shumo\\E题数据\\附件2-数据集特征文件\\aligned_50.pkl",
+    "normalization": "D:\\Desktop\\shumo\\E题数据\\Q2B_outputs\\Q2B_normalization_stats.npz",
+    "bert_cache_valid": "D:\\Desktop\\shumo\\E题数据\\Q2B_outputs\\bert_cache\\valid_bert_embeddings.npy",
+    "bert_cache_test": "D:\\Desktop\\shumo\\E题数据\\Q2B_outputs\\bert_cache\\test_bert_embeddings.npy",
+    "checkpoint": "D:\\Desktop\\shumo\\E题数据\\Q2D_R2_AV_MultiGap_outputs\\checkpoints\\Q2D_R2_AV_MultiGap_best_model.pt",
+    "calibration": "D:\\Desktop\\shumo\\E题数据\\Q2E_outputs\\Q2E_F1\\Q2E_F1_global_calibration.json",
+    "old_valid": "D:\\Desktop\\shumo\\E题数据\\Q2D_R2_AV_MultiGap_outputs\\Q2D_R2_AV_MultiGap_clean_valid_predictions.csv",
+    "old_test": "D:\\Desktop\\shumo\\E题数据\\Q2D_R2_AV_MultiGap_outputs\\Q2D_R2_AV_MultiGap_clean_test_predictions.csv",
+    "old_metrics": "D:\\Desktop\\shumo\\E题数据\\Q2D_R2_AV_MultiGap_outputs\\Q2D_R2_AV_MultiGap_clean_metrics.csv",
+    "q2e_valid": "D:\\Desktop\\shumo\\E题数据\\Q2E_outputs\\Q2E_F1\\Q2E_F1_clean_valid_predictions.csv",
+    "q2e_test": "D:\\Desktop\\shumo\\E题数据\\Q2E_outputs\\Q2E_F1\\Q2E_F1_clean_test_predictions.csv",
+    "q2_source": "D:\\Desktop\\shumo\\Q2\\Q2D_R2_AV_MultiGap_train_robust_model.py"
+  },
+  "input_manifest": {
+    "attachment2": {
+      "path": "D:\\Desktop\\shumo\\E题数据\\附件2-数据集特征文件\\aligned_50.pkl",
+      "sha256": "66e867aa74bc70a844e806e5571e371c9abb4a35f9e2887ce9b4d97ff2cb8fcd"
+    },
+    "normalization": {
+      "path": "D:\\Desktop\\shumo\\E题数据\\Q2B_outputs\\Q2B_normalization_stats.npz",
+      "sha256": "74cd2807f7661742721b96d889255a9e1bf82403a0979c7bacd4d1578dfaaa63"
+    },
+    "bert_cache_valid": {
+      "path": "D:\\Desktop\\shumo\\E题数据\\Q2B_outputs\\bert_cache\\valid_bert_embeddings.npy",
+      "sha256": "4acd6022a30b99d65354e52cccfe1d8d51d8fb94d729bea5a811d6c750282874"
+    },
+    "bert_cache_test": {
+      "path": "D:\\Desktop\\shumo\\E题数据\\Q2B_outputs\\bert_cache\\test_bert_embeddings.npy",
+      "sha256": "9305e64932d9f3874dcab2b3154955c2c1fb209223d90f98badd9c1d38d19619"
+    },
+    "checkpoint": {
+      "path": "D:\\Desktop\\shumo\\E题数据\\Q2D_R2_AV_MultiGap_outputs\\checkpoints\\Q2D_R2_AV_MultiGap_best_model.pt",
+      "sha256": "512515504e0e8a266cb3ef403a7f1aff5275d2df4fd572ccef3d519ebcb824aa"
+    },
+    "calibration": {
+      "path": "D:\\Desktop\\shumo\\E题数据\\Q2E_outputs\\Q2E_F1\\Q2E_F1_global_calibration.json",
+      "sha256": "5f4f33a4d0f58418f2bdc0b7c2cecfc008a8a0db4001ed50db2b5bbbae211448"
+    },
+    "old_valid": {
+      "path": "D:\\Desktop\\shumo\\E题数据\\Q2D_R2_AV_MultiGap_outputs\\Q2D_R2_AV_MultiGap_clean_valid_predictions.csv",
+      "sha256": "3793e5c353b364ebb7423e26cd6d721275a58deaa08b2d460ace68ba9e20433f"
+    },
+    "old_test": {
+      "path": "D:\\Desktop\\shumo\\E题数据\\Q2D_R2_AV_MultiGap_outputs\\Q2D_R2_AV_MultiGap_clean_test_predictions.csv",
+      "sha256": "896865eae53db8c581c5d16b13585e019c88202b35dd9b9669c444ba3038124a"
+    },
+    "old_metrics": {
+      "path": "D:\\Desktop\\shumo\\E题数据\\Q2D_R2_AV_MultiGap_outputs\\Q2D_R2_AV_MultiGap_clean_metrics.csv",
+      "sha256": "eb38099efc3a2fba9ce69538d223903a7f9dcb0d8df416f579f10cb075b075f0"
+    },
+    "q2e_valid": {
+      "path": "D:\\Desktop\\shumo\\E题数据\\Q2E_outputs\\Q2E_F1\\Q2E_F1_clean_valid_predictions.csv",
+      "sha256": "c1921ca77d43eaaef3eab302e386409c922e85b2e599fb22ee11eaa63116d377"
+    },
+    "q2e_test": {
+      "path": "D:\\Desktop\\shumo\\E题数据\\Q2E_outputs\\Q2E_F1\\Q2E_F1_clean_test_predictions.csv",
+      "sha256": "c60aa35e7e60be7634914cc89abd60f5fca8ec0b94f2ec37ab1f7ed26cf5ea4c"
+    },
+    "q2_source": {
+      "path": "D:\\Desktop\\shumo\\Q2\\Q2D_R2_AV_MultiGap_train_robust_model.py",
+      "sha256": "9ad58d24f40d920a37d568a81369a8151f107abe07e4c5b88cb6f946f8771282"
+    }
+  },
+  "environment": {
+    "python": "3.10.21 | packaged by Anaconda, Inc. | (main, Aug 27 2026, 14:35:39) [MSC v.1942 64 bit (AMD64)]",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "torch": "2.9.1+cu128",
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "device": "cuda",
+    "gpu": "NVIDIA GeForce RTX 5060 Ti"
+  },
+  "restrictions": {
+    "training": false,
+    "checkpoint_update": false,
+    "attachment3_read": false,
+    "attachment4_read": false,
+    "pseudo_labels": false
+  }
+}
