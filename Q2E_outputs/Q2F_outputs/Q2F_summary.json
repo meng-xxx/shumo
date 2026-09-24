@@ -1,0 +1,73 @@
+{
+  "stage": "Q2F",
+  "status": "PASS",
+  "timestamp": "2026-09-24T17:08:27.861803",
+  "contracts": {
+    "model_training": false,
+    "pseudo_labels": false,
+    "attachment3_label_use": false,
+    "checkpoint": "D:\\Desktop\\shumo\\E题数据\\Q2D_R2_AV_MultiGap_outputs\\checkpoints\\Q2D_R2_AV_MultiGap_best_model.pt",
+    "global_calibration": "D:\\Desktop\\shumo\\E题数据\\Q2E_outputs\\Q2E_F1\\Q2E_F1_global_calibration.json",
+    "final_mask_policy": "auto",
+    "native_zero_automatically_missing": false,
+    "derived_mask_fallback_if_no_explicit_mask": "joint A+V zero rows plus unilateral zero runs >= 2"
+  },
+  "sample_count": 30,
+  "class_counts": {
+    "Negative": 8,
+    "Neutral": 12,
+    "Positive": 10
+  },
+  "intensity": {
+    "mean": 0.11112793465455366,
+    "std": 0.5601436331850436,
+    "min": -1.0862630158662798,
+    "max": 1.3637369841337204
+  },
+  "calibration": {
+    "a": 0.8,
+    "b": 0.009049484133720337,
+    "formula": "clip(a * raw_R2_regression + b, -3, 3)"
+  },
+  "bert_gate": {
+    "status": "PASS",
+    "samples": 4,
+    "max_abs_error": 0.020874500274658203,
+    "mean_abs_error": 0.00028936986927874386,
+    "correlation": 0.9999996287472483,
+    "thresholds": {
+      "max_abs_tol": 0.025,
+      "mean_abs_tol": 0.003,
+      "corr_min": 0.9995
+    },
+    "bert_model": "bert-base-uncased"
+  },
+  "checkpoint_meta": {
+    "epoch": 7,
+    "checkpoint_keys": [
+      "stage",
+      "timestamp",
+      "epoch",
+      "selection_score",
+      "clean_valid_metrics",
+      "missing_valid_metrics",
+      "model_state_dict",
+      "optimizer_state_dict",
+      "config"
+    ]
+  },
+  "mask_audit": {
+    "samples_with_explicit_mask": 0,
+    "samples_using_derived_mask": 30,
+    "mean_audio_missing_rate": 0.2960111541926432,
+    "mean_vision_missing_rate": 0.2989523306632314
+  },
+  "outputs": {
+    "final_predictions": "Q2F_final_predictions.csv",
+    "submission": "Q2F_submission.csv",
+    "mask_audit": "Q2F_mask_audit.csv",
+    "sensitivity_predictions": "Q2F_sensitivity_predictions.csv",
+    "sensitivity_summary": "Q2F_sensitivity_summary.csv",
+    "bert_embeddings": "Q2F_attachment3_bert_embeddings.npy"
+  }
+}
