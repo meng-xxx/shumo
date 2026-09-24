@@ -1,0 +1,123 @@
+{
+  "stage": "Q2E-Classical-R1",
+  "status": "PASS",
+  "timestamp": "2026-09-24T14:18:17.384758",
+  "design": {
+    "text_feature": "Frozen-BERT [CLS + masked mean]",
+    "audio_feature": "50x74 flatten + masked mean/std/max",
+    "vision_feature": "50x35 flatten + masked mean/std/max",
+    "feature_dim": 7313,
+    "svc": "RBF SVC, class_weight=balanced",
+    "ridge": "Ridge(solver=lsqr)",
+    "attachment3_used": false,
+    "q2c_used_for_hyperparameter_selection": false
+  },
+  "best_hyperparameters": {
+    "svc_C": 1.0,
+    "ridge_alpha": 30000.0,
+    "ridge_best_on_upper_grid_boundary": false
+  },
+  "clean_valid_metrics": {
+    "accuracy": 0.5906593406593407,
+    "macro_f1": 0.5714595784187049,
+    "weighted_f1": 0.5914093787072269,
+    "mae": 0.65499454469594,
+    "pearson": 0.5523251987965572,
+    "recall_negative": 0.5922330097087378,
+    "recall_neutral": 0.45108695652173914,
+    "recall_positive": 0.665680473372781,
+    "f1_negative": 0.6130653266331658,
+    "f1_neutral": 0.44148936170212766,
+    "f1_positive": 0.6598240469208211,
+    "mae_negative": 0.8755891736488319,
+    "mae_neutral": 0.35905523391683464,
+    "mae_positive": 0.6816523542197851
+  },
+  "clean_test_metrics": {
+    "accuracy": 0.6423658872077029,
+    "macro_f1": 0.5958373489860205,
+    "weighted_f1": 0.6389978277550145,
+    "mae": 0.7005951156253007,
+    "pearson": 0.616800090922855,
+    "recall_negative": 0.6183574879227053,
+    "recall_neutral": 0.3987341772151899,
+    "recall_positive": 0.7624309392265194,
+    "f1_negative": 0.6320987654320988,
+    "f1_neutral": 0.4144736842105263,
+    "f1_positive": 0.7409395973154362,
+    "mae_negative": 1.044526097063281,
+    "mae_neutral": 0.3718675435815431,
+    "mae_positive": 0.6474051797834549
+  },
+  "general_90": {
+    "scenario_count": 90,
+    "mean_accuracy": 0.5522588522588523,
+    "mean_macro_f1": 0.5368500032552692,
+    "mean_mae": 0.6638350151901126,
+    "mean_pearson": 0.5308511148924013,
+    "worst_accuracy": 0.3873626373626374
+  },
+  "task_matched_AV": {
+    "scenario_count": 45,
+    "mean_accuracy": 0.5854090354090354,
+    "mean_macro_f1": 0.5710837548269756,
+    "mean_mae": 0.6505916080118064,
+    "mean_pearson": 0.5629538488871397,
+    "worst_accuracy": 0.5659340659340659
+  },
+  "q2c_evaluation_seconds": 655.6934962272644,
+  "config": {
+    "data_root": "D:\\Desktop\\shumo\\E题数据",
+    "attachment2_relative": "附件2-数据集特征文件\\aligned_50.pkl",
+    "q2b_relative": "Q2B_outputs",
+    "q2c_relative": "Q2C_outputs",
+    "q2d_r2_relative": "Q2D_R2_AV_MultiGap_outputs",
+    "old_classical_relative": "Q2E_outputs\\classical",
+    "output_relative": "Q2E_outputs\\classical_r1",
+    "seq_len": 50,
+    "text_dim": 768,
+    "audio_dim": 74,
+    "vision_dim": 35,
+    "svc_c_grid": [
+      0.25,
+      0.5,
+      1.0,
+      2.0,
+      4.0,
+      8.0
+    ],
+    "svc_kernel": "rbf",
+    "svc_gamma": "scale",
+    "ridge_alpha_grid": [
+      1.0,
+      3.0,
+      10.0,
+      30.0,
+      100.0,
+      300.0,
+      1000.0,
+      3000.0,
+      10000.0,
+      30000.0,
+      100000.0
+    ],
+    "seed": 2026,
+    "ridge_solver": "lsqr",
+    "regression_min": -3.0,
+    "regression_max": 3.0
+  },
+  "environment": {
+    "python": "3.10.21 | packaged by Anaconda, Inc. | (main, Aug 27 2026, 14:35:39) [MSC v.1942 64 bit (AMD64)]",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "numpy": "1.26.4",
+    "pandas": "2.3.3"
+  },
+  "outputs": {
+    "svc_grid": "Q2E_Classical_R1_svc_grid.csv",
+    "ridge_grid": "Q2E_Classical_R1_ridge_grid.csv",
+    "valid_predictions": "Q2E_Classical_R1_clean_valid_predictions.csv",
+    "test_predictions": "Q2E_Classical_R1_clean_test_predictions.csv",
+    "scenario_metrics": "Q2E_Classical_R1_Q2C_scenario_metrics.csv",
+    "model_comparison": "Q2E_Classical_R1_model_comparison.csv"
+  }
+}
