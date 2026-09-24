@@ -1,0 +1,37 @@
+{
+  "stage": "Q2E-TextAnchor-CoreAblation",
+  "attachment3_used": false,
+  "decision_rule": "TextAnchor replaces R2 only if task MAE improves and task Accuracy/Macro-F1/Pearson remain within 0.002 of R2, while worst Accuracy remains within 0.005.",
+  "r2_reference_available": true,
+  "replacement_candidate": null,
+  "checks": {
+    "text_anchor_nocomp": {
+      "mae_better_than_r2": false,
+      "accuracy_preserved": true,
+      "macro_f1_preserved": true,
+      "pearson_preserved": false,
+      "worst_accuracy_preserved": true
+    },
+    "no_availability_context": {
+      "mae_better_than_r2": false,
+      "accuracy_preserved": true,
+      "macro_f1_preserved": true,
+      "pearson_preserved": false,
+      "worst_accuracy_preserved": true
+    },
+    "no_consistency_teacher": {
+      "mae_better_than_r2": false,
+      "accuracy_preserved": true,
+      "macro_f1_preserved": true,
+      "pearson_preserved": false,
+      "worst_accuracy_preserved": true
+    },
+    "longblock_only": {
+      "mae_better_than_r2": false,
+      "accuracy_preserved": true,
+      "macro_f1_preserved": true,
+      "pearson_preserved": false,
+      "worst_accuracy_preserved": true
+    }
+  }
+}
