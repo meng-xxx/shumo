@@ -1,0 +1,61 @@
+{
+  "stage": "Q3C",
+  "decision": "PASS_NEUTRAL_ZERO_PRIMARY_BASELINE_SENSITIVE",
+  "selected_baseline": "NEUTRAL_ZERO",
+  "selection_reason": "paired CI crosses zero; neutral-zero is preferred for input-information semantics, natural-zero idempotence, and avoidance of missing-state effects",
+  "paired_D": {
+    "mean": -0.07897244915269672,
+    "ci_low": -0.4075022945945265,
+    "ci_high": 0.34207447093348164
+  },
+  "main_modality_disagreement_rate": 0.37362637362637363,
+  "gate": {
+    "passed": true,
+    "decision": "PASS_NEUTRAL_ZERO_PRIMARY_BASELINE_SENSITIVE",
+    "q3b_prerequisite_passed": true,
+    "input_sha256_match_q3b": {
+      "attachment2": true,
+      "normalization": true,
+      "bert_cache_valid": true,
+      "checkpoint": true
+    },
+    "all_valid_samples_completed": true,
+    "all_modalities_local_attribution_completed": true,
+    "all_finite": true,
+    "topk_ratios": [
+      0.1,
+      0.2,
+      0.3
+    ],
+    "random_repeats": 20,
+    "checkpoint_unchanged": true,
+    "model_parameters_updated": false,
+    "attachment3_read": false,
+    "attachment4_read": false,
+    "selection_rule_followed": true,
+    "selected_baseline": "NEUTRAL_ZERO",
+    "allow_next_stage_attachment4": true
+  },
+  "runtime_seconds": 192.35697746276855,
+  "outputs": [
+    "Q3C_baseline_bootstrap.csv",
+    "Q3C_baseline_selection.csv",
+    "Q3C_final_report.md",
+    "Q3C_gate.json",
+    "Q3C_local_attribution_missing.csv",
+    "Q3C_local_attribution_zero.csv",
+    "Q3C_main_modality_missing.csv",
+    "Q3C_main_modality_zero.csv",
+    "Q3C_model_contract.json",
+    "Q3C_multiscale_stability.csv",
+    "Q3C_randomk_summary_missing.csv",
+    "Q3C_randomk_summary_zero.csv",
+    "Q3C_run_config.json",
+    "Q3C_shapley_local_consistency.csv",
+    "Q3C_subgroup_audit.csv",
+    "Q3C_summary.json",
+    "Q3C_topk_faithfulness_missing.csv",
+    "Q3C_topk_faithfulness_zero.csv",
+    "Q3C_validation_metric_faithfulness.csv"
+  ]
+}

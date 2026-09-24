@@ -1,0 +1,14 @@
+{
+  "model": "Q2D-R2-AV-MultiGap + Global Affine Calibration",
+  "model_eval": true,
+  "gradients_disabled": true,
+  "a": 0.8,
+  "b": 0.009049484133720337,
+  "prediction": "clip(a*y_raw+b,-3,3)",
+  "attribution_regression": "a*y_raw+b (unclipped)",
+  "fixed_clean_class": true,
+  "native_zero_is_missing": false,
+  "TEXT_MISSING_OOD_CAUTION": true,
+  "checkpoint_sha256_before": "512515504e0e8a266cb3ef403a7f1aff5275d2df4fd572ccef3d519ebcb824aa",
+  "checkpoint_sha256_after": "512515504e0e8a266cb3ef403a7f1aff5275d2df4fd572ccef3d519ebcb824aa"
+}

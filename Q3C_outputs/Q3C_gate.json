@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "decision": "PASS_NEUTRAL_ZERO_PRIMARY_BASELINE_SENSITIVE",
+  "q3b_prerequisite_passed": true,
+  "input_sha256_match_q3b": {
+    "attachment2": true,
+    "normalization": true,
+    "bert_cache_valid": true,
+    "checkpoint": true
+  },
+  "all_valid_samples_completed": true,
+  "all_modalities_local_attribution_completed": true,
+  "all_finite": true,
+  "topk_ratios": [
+    0.1,
+    0.2,
+    0.3
+  ],
+  "random_repeats": 20,
+  "checkpoint_unchanged": true,
+  "model_parameters_updated": false,
+  "attachment3_read": false,
+  "attachment4_read": false,
+  "selection_rule_followed": true,
+  "selected_baseline": "NEUTRAL_ZERO",
+  "allow_next_stage_attachment4": true
+}
