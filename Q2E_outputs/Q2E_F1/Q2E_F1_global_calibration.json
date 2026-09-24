@@ -1,0 +1,16 @@
+{
+  "Q2B": {
+    "a": 0.956,
+    "b": -0.05632367736101148,
+    "fit_mae": 0.5862310434000997,
+    "fit_pearson": 0.6461435383552451
+  },
+  "Q2D_R2": {
+    "a": 0.8,
+    "b": 0.009049484133720337,
+    "fit_mae": 0.5721020951744292,
+    "fit_pearson": 0.6622291469751359
+  },
+  "fit_data": "Attachment2 validation only; 50% clean + 50% independent fixed AV-missing",
+  "future_use": "Global coefficients are the only coefficients intended for future unseen Attachment3/Q2F samples."
+}
