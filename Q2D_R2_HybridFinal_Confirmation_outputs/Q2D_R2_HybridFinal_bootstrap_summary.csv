@@ -1,0 +1,17 @@
+﻿comparison,metric,mean_delta,median_delta,ci95_low,ci95_high,probability_delta_gt_0,bootstrap_two_sided_p,bootstrap_repeats,positive_means
+Clean Valid raw: Hybrid vs Seed2028,accuracy_gain,0.0,0.0,0.0,0.0,0.0,1.0,3000,Hybrid final candidate better than Seed 2028
+Clean Valid raw: Hybrid vs Seed2028,macro_f1_gain,0.0,0.0,0.0,0.0,0.0,1.0,3000,Hybrid final candidate better than Seed 2028
+Clean Valid raw: Hybrid vs Seed2028,mae_reduction,0.00021473465137210456,0.00023182363628021507,-0.0012404324450009413,0.0017169146153789454,0.6216666666666667,0.7566666666666667,3000,Hybrid final candidate better than Seed 2028
+Clean Valid raw: Hybrid vs Seed2028,pearson_gain,0.0003863501332001745,0.00040075809187833933,-0.0012350131039535529,0.0018810654877603147,0.6913333333333334,0.6173333333333333,3000,Hybrid final candidate better than Seed 2028
+Clean Valid calibrated: Hybrid vs Seed2028,accuracy_gain,0.0,0.0,0.0,0.0,0.0,1.0,3000,Hybrid final candidate better than Seed 2028
+Clean Valid calibrated: Hybrid vs Seed2028,macro_f1_gain,0.0,0.0,0.0,0.0,0.0,1.0,3000,Hybrid final candidate better than Seed 2028
+Clean Valid calibrated: Hybrid vs Seed2028,mae_reduction,0.00043562350752532114,0.0004317408962155045,-0.0007683237769994133,0.0016601149714092049,0.7563333333333333,0.48733333333333334,3000,Hybrid final candidate better than Seed 2028
+Clean Valid calibrated: Hybrid vs Seed2028,pearson_gain,3.24562193629145e-05,3.886583051099235e-05,-0.0016029818305810905,0.0015501084123980798,0.52,0.96,3000,Hybrid final candidate better than Seed 2028
+Q2C2 raw: Hybrid vs Seed2028,accuracy_gain,0.0,0.0,0.0,0.0,0.0,1.0,3000,Hybrid final candidate better than Seed 2028
+Q2C2 raw: Hybrid vs Seed2028,macro_f1_gain,0.0,0.0,0.0,0.0,0.0,1.0,3000,Hybrid final candidate better than Seed 2028
+Q2C2 raw: Hybrid vs Seed2028,mae_reduction,0.00034388111369828894,0.0003488892163075463,-0.0010012818834902488,0.0016858895255232856,0.6903333333333334,0.6193333333333333,3000,Hybrid final candidate better than Seed 2028
+Q2C2 raw: Hybrid vs Seed2028,pearson_gain,0.00017782668948325772,0.00018643290232411847,-0.0012732686064006848,0.0016547945755289283,0.597,0.806,3000,Hybrid final candidate better than Seed 2028
+Q2C2 calibrated: Hybrid vs Seed2028,accuracy_gain,0.0,0.0,0.0,0.0,0.0,1.0,3000,Hybrid final candidate better than Seed 2028
+Q2C2 calibrated: Hybrid vs Seed2028,macro_f1_gain,0.0,0.0,0.0,0.0,0.0,1.0,3000,Hybrid final candidate better than Seed 2028
+Q2C2 calibrated: Hybrid vs Seed2028,mae_reduction,0.0004720224207188362,0.0004723579249817367,-0.0006387334162474861,0.0016011593204309504,0.794,0.412,3000,Hybrid final candidate better than Seed 2028
+Q2C2 calibrated: Hybrid vs Seed2028,pearson_gain,-0.00018659285729738143,-0.00018815508144609527,-0.0017433294021271806,0.0012898833142214602,0.4103333333333333,0.8206666666666667,3000,Hybrid final candidate better than Seed 2028

@@ -1,0 +1,31 @@
+{
+  "hybrid": {
+    "classification": "seed_2028",
+    "regression_weights": {
+      "seed_2026": 0.1,
+      "seed_2027": 0.0,
+      "seed_2028": 0.9
+    },
+    "global_calibration": {
+      "a": 0.9009999999999999,
+      "b": -0.012816688156127909,
+      "fit_mae": 0.5720285688756095,
+      "fit_pearson": 0.6722309142953103
+    }
+  },
+  "seed_2028_reference": {
+    "classification": "seed_2028",
+    "regression": "seed_2028",
+    "global_calibration": {
+      "a": 0.9089999999999999,
+      "b": -0.013608474373817459,
+      "fit_mae": 0.5727622165678294,
+      "fit_pearson": 0.6720417542992592
+    }
+  },
+  "selection_contract": {
+    "test_used_for_selection": false,
+    "attachment3_used": false,
+    "weight_search": false
+  }
+}

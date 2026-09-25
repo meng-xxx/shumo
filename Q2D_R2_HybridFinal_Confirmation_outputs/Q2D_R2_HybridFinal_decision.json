@@ -1,0 +1,24 @@
+{
+  "decision": "SELECT_HYBRID_FINAL_CANDIDATE",
+  "selection_data": "Clean Validation + Q2C2 only; Clean Test and Attachment3 excluded",
+  "hybrid_definition": {
+    "classification": "Seed 2028 only",
+    "regression": "0.1*Seed2026 + 0.9*Seed2028"
+  },
+  "checks": {
+    "clean_classification_identical": true,
+    "q2c2_classification_identical": true,
+    "clean_raw_mae_not_worse": true,
+    "clean_raw_pearson_preserved": true,
+    "q2c2_raw_mae_not_worse": true,
+    "q2c2_raw_pearson_preserved": true,
+    "clean_oof_mae_not_worse": true,
+    "q2c2_oof_mae_not_worse": true,
+    "q2c2_oof_pearson_preserved": true
+  },
+  "tolerances": {
+    "raw_pearson": 0.001,
+    "oof_pearson": 0.002,
+    "mae": 1e-12
+  }
+}
