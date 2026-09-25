@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "decision": "PASS_Q3_FINAL_20_OF_20",
+  "q3d_gate_pass": true,
+  "explainer_contract_verified": true,
+  "interval_quantile_frozen_0_75": true,
+  "attachment4_loaded_20_of_20": true,
+  "bert_replay_20_of_20": true,
+  "clean_predictions_20_of_20": true,
+  "exact_shapley_20_of_20": true,
+  "shapley_efficiency_pass": true,
+  "local_attribution_complete": true,
+  "natural_zero_all_pass": true,
+  "q1_mapping_executed": true,
+  "mapping_no_fail": true,
+  "representative_frames_valid": true,
+  "checkpoint_unchanged": true,
+  "training": false,
+  "pseudo_labels": false,
+  "manual_prediction_edits": false,
+  "attachment4_tuning": false,
+  "final_csv_20_of_20": true
+}

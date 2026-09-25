@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "q3d_gate": "PASS_FINAL_EXPLAINER_FROZEN",
+  "explainer_contract_sha256": "cd0cc00d7da5a928b98412bbae804ebf94b41a7e182976cc39f079ece643aa70",
+  "contract_fields_match": true,
+  "interval_quantile": 0.75,
+  "interval_quantile_source": "Q3D_run_config.json",
+  "attachment4_pkl_count": 20,
+  "attachment4_video_count": 20,
+  "unique_ids": 20,
+  "q3a_sha256_all_match": true
+}

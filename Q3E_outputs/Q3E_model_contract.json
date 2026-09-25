@@ -1,0 +1,9 @@
+{
+  "checkpoint_sha256": "512515504e0e8a266cb3ef403a7f1aff5275d2df4fd572ccef3d519ebcb824aa",
+  "normalization_sha256": "74cd2807f7661742721b96d889255a9e1bf82403a0979c7bacd4d1578dfaaa63",
+  "a": 0.8,
+  "b": 0.009049484133720337,
+  "checkpoint_sha256_after": "512515504e0e8a266cb3ef403a7f1aff5275d2df4fd572ccef3d519ebcb824aa",
+  "model_eval": true,
+  "bert_eval": true
+}

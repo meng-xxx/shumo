@@ -1,0 +1,15 @@
+{
+  "sample_id": "13",
+  "raw_video_readable": true,
+  "original_vision_effective_all_zero": true,
+  "native_zero_rule_pass": true,
+  "vision_shapley_contribution": 0.0,
+  "phi_V_cls": 0.0,
+  "phi_V_reg": 0.0,
+  "vision_local_evidence_count": 0,
+  "main_modality": "T",
+  "text_evidence_count": 3,
+  "audio_evidence_count": 3,
+  "vision_keyframe_generated": false,
+  "warning": false
+}

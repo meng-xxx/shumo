@@ -1,0 +1,71 @@
+{
+  "predictor_checkpoint_sha256": "512515504e0e8a266cb3ef403a7f1aff5275d2df4fd572ccef3d519ebcb824aa",
+  "normalization_sha256": "74cd2807f7661742721b96d889255a9e1bf82403a0979c7bacd4d1578dfaaa63",
+  "calibration": {
+    "a": 0.8,
+    "b": 0.009049484133720337,
+    "prediction": "clip(a*y_raw+b,-3,3)",
+    "attribution": "a*y_raw+b (unclipped)"
+  },
+  "shapley_baseline": "NEUTRAL_ZERO",
+  "classification_value": "fixed-clean-class logit margin",
+  "contribution_fusion": {
+    "classification": 0.5,
+    "regression": 0.5
+  },
+  "text_mask_strategy": "whole original WordPiece group replaced by [MASK], Frozen bert-base-uncased replay",
+  "text_window_sizes": [
+    1,
+    2,
+    3
+  ],
+  "audio_vision_window_sizes": [
+    1,
+    3,
+    5
+  ],
+  "stride": 1,
+  "nms_threshold": 0.3,
+  "nms_validation_audit": [
+    {
+      "nms_threshold": 0.3,
+      "faithfulness_score": 1.9321314038624864,
+      "mean_interval_count": 2.8461538461538463,
+      "zero_interval_rate": 0.0
+    },
+    {
+      "nms_threshold": 0.5,
+      "faithfulness_score": 1.887831086559977,
+      "mean_interval_count": 2.965659340659341,
+      "zero_interval_rate": 0.0
+    },
+    {
+      "nms_threshold": 0.7,
+      "faithfulness_score": 1.9071937929768217,
+      "mean_interval_count": 2.9711538461538463,
+      "zero_interval_rate": 0.0
+    }
+  ],
+  "max_evidence_intervals": 3,
+  "stability_rule": {
+    "multiscale_top20_jaccard_cutoff": 0.4094276094276094,
+    "High": "baseline agreement AND multiscale stable",
+    "Moderate": "exactly one",
+    "Low": "neither"
+  },
+  "natural_zero_rule": "already-zero effective modality must retain zero information effect",
+  "q1_mapping_script": "D:\\Desktop\\shumo\\Q1\\Q1Final_word_anchored_100_v2.py",
+  "q1_mapping_sha256": "4135baa44b1b3739aec15762fd449c259f34eb9800ad8875b62b0c5005ae2026",
+  "time_mapping_interface": [
+    "aligned_position",
+    "original_word_or_token",
+    "start_time",
+    "end_time",
+    "representative_frame"
+  ],
+  "forbid_uniform_position_over_50_time_mapping": true,
+  "seed": 2026,
+  "interval_quantile": 0.75,
+  "interval_quantile_source": "Q3D_run_config.json",
+  "q3d_explainer_contract_sha256": "cd0cc00d7da5a928b98412bbae804ebf94b41a7e182976cc39f079ece643aa70"
+}
