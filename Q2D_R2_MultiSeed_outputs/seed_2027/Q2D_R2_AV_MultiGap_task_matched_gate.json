@@ -1,0 +1,11 @@
+{
+  "status": "PARTIAL",
+  "checks": {
+    "mean_accuracy_gain_positive": true,
+    "mean_macro_f1_gain_positive": true,
+    "mean_mae_reduction_positive": false,
+    "mean_pearson_gain_positive": true,
+    "worst_accuracy_not_below_q2b": true,
+    "clean_valid_accuracy_preserved": true
+  }
+}

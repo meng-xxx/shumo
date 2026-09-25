@@ -1,0 +1,146 @@
+{
+  "stage": "Q2D-R2-AV-MultiGap",
+  "training_seed": 2027,
+  "execution_status": "PASS",
+  "model_gate": {
+    "status": "PARTIAL",
+    "checks": {
+      "mean_accuracy_gain_positive": true,
+      "mean_macro_f1_gain_positive": true,
+      "mean_mae_reduction_positive": false,
+      "mean_pearson_gain_positive": true,
+      "worst_accuracy_not_below_q2b": true,
+      "clean_valid_accuracy_preserved": true
+    }
+  },
+  "best_epoch": 7,
+  "best_selection_score": 0.6768604830533291,
+  "epochs_run": 15,
+  "training_seconds": 197.07835173606873,
+  "model_parameters": {
+    "total": 1195340,
+    "initially_trainable": 267084
+  },
+  "warm_start": {
+    "loaded_keys": 93,
+    "missing_after_partial_load": 57,
+    "unexpected": 0
+  },
+  "native_zero_audit": {
+    "train_audio_zero_inside_valid_ratio": 0.08192704847499761,
+    "train_vision_zero_inside_valid_ratio": 0.131931829046754,
+    "rule": "native zero != missing; only synthetic_missing changes observed_mask during training"
+  },
+  "clean_valid_metrics": {
+    "accuracy": 0.6277472527472527,
+    "macro_f1": 0.617581362119397,
+    "weighted_f1": 0.6351790680192778,
+    "mae": 0.6042718887329102,
+    "pearson": 0.6600244325667375,
+    "recall_negative": 0.6699029126213593,
+    "recall_neutral": 0.5815217391304348,
+    "recall_positive": 0.6272189349112426,
+    "f1_negative": 0.6494117647058824,
+    "f1_neutral": 0.5071090047393365,
+    "f1_positive": 0.6962233169129721,
+    "mae_negative": 0.7224555015563965,
+    "mae_neutral": 0.4513266980648041,
+    "mae_positive": 0.6155030131340027,
+    "composite_score": 0.6759822711306043,
+    "task_loss": 1.3473579909775284,
+    "weight_text": 0.4567413362843401,
+    "missing_region_weight_text": NaN,
+    "weight_audio": 0.2746048268520297,
+    "missing_region_weight_audio": NaN,
+    "weight_vision": 0.2686538352253664,
+    "missing_region_weight_vision": NaN
+  },
+  "clean_test_metrics": {
+    "accuracy": 0.656121045392022,
+    "macro_f1": 0.6316177226932365,
+    "weighted_f1": 0.6635040538542425,
+    "mae": 0.6496555805206299,
+    "pearson": 0.6851298946023325,
+    "recall_negative": 0.7342995169082126,
+    "recall_neutral": 0.5189873417721519,
+    "recall_positive": 0.6712707182320442,
+    "f1_negative": 0.7053364269141531,
+    "f1_neutral": 0.4619718309859155,
+    "f1_positive": 0.7275449101796407,
+    "mae_negative": 0.8073779344558716,
+    "mae_neutral": 0.5050525665283203,
+    "mae_positive": 0.6225804090499878,
+    "composite_score": 0.6890792006285119,
+    "task_loss": 1.3537258354145034,
+    "weight_text": 0.45615118481876016,
+    "missing_region_weight_text": NaN,
+    "weight_audio": 0.27765645475063067,
+    "missing_region_weight_audio": NaN,
+    "weight_vision": 0.2661923637642241,
+    "missing_region_weight_vision": NaN
+  },
+  "clean_q2b_vs_r1": {
+    "valid": {
+      "q2b_accuracy": 0.6071428571428571,
+      "r1_accuracy": 0.6277472527472527,
+      "q2b_macro_f1": 0.5972587605981435,
+      "r1_macro_f1": 0.617581362119397,
+      "q2b_mae": 0.5899538993835449,
+      "r1_mae": 0.6042718887329102,
+      "q2b_pearson": 0.6464784939503869,
+      "r1_pearson": 0.6600244325667375
+    },
+    "test": {
+      "q2b_accuracy": 0.6478679504814305,
+      "r1_accuracy": 0.656121045392022,
+      "q2b_macro_f1": 0.6210943512971854,
+      "r1_macro_f1": 0.6316177226932365,
+      "q2b_mae": 0.6364571452140808,
+      "r1_mae": 0.6496555805206299,
+      "q2b_pearson": 0.6604216828306496,
+      "r1_pearson": 0.6851298946023325
+    }
+  },
+  "general_all90": {
+    "q2b_mean_accuracy": 0.6040750915750915,
+    "r1_mean_accuracy": 0.6087301587301587,
+    "mean_accuracy_gain": 0.004655067155067145,
+    "q2b_mean_macro_f1": 0.5936358619294266,
+    "r1_mean_macro_f1": 0.5989564923266296,
+    "mean_macro_f1_gain": 0.0053206303972031365,
+    "q2b_mean_mae": 0.6003217425611284,
+    "r1_mean_mae": 0.6080581572320726,
+    "mean_mae_reduction": -0.007736414670944214,
+    "q2b_mean_pearson": 0.6359000661461105,
+    "r1_mean_pearson": 0.6383392847108318,
+    "mean_pearson_gain": 0.002439218564721362,
+    "q2b_worst_accuracy": 0.5398351648351648,
+    "r1_worst_accuracy": 0.5274725274725275
+  },
+  "task_matched_AV": {
+    "q2b_mean_accuracy": 0.6088827838827839,
+    "r1_mean_accuracy": 0.6279304029304029,
+    "mean_accuracy_gain": 0.019047619047619035,
+    "q2b_mean_macro_f1": 0.6018320726219888,
+    "r1_mean_macro_f1": 0.6167006961884135,
+    "mean_macro_f1_gain": 0.014868623566424774,
+    "q2b_mean_mae": 0.5862879395484925,
+    "r1_mean_mae": 0.6058768484327528,
+    "mean_mae_reduction": -0.01958890888426039,
+    "q2b_mean_pearson": 0.6517765248341496,
+    "r1_mean_pearson": 0.6609242003833633,
+    "mean_pearson_gain": 0.009147675549213613,
+    "q2b_worst_accuracy": 0.5851648351648352,
+    "r1_worst_accuracy": 0.614010989010989
+  },
+  "q2c_evaluation_seconds": 45.394177198410034,
+  "outputs": {
+    "checkpoint": "D:\\Desktop\\shumo\\E题数据\\Q2D_R2_MultiSeed_outputs\\seed_2027\\checkpoints\\Q2D_R2_AV_MultiGap_best_model.pt",
+    "training_history": "Q2D_R2_AV_MultiGap_training_history.csv",
+    "validation_plan": "Q2D_R2_AV_MultiGap_validation_missing_plan.csv",
+    "q2c_metrics": "Q2D_R2_AV_MultiGap_Q2C_scenario_metrics.csv",
+    "all90_comparison": "Q2D_R2_AV_MultiGap_vs_Q2B_all90.csv",
+    "task_matched_comparison": "Q2D_R2_AV_MultiGap_vs_Q2B_task_matched.csv",
+    "task_gate": "Q2D_R2_AV_MultiGap_task_matched_gate.json"
+  }
+}

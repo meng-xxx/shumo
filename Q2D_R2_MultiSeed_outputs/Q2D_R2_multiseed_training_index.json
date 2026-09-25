@@ -1,0 +1,128 @@
+{
+  "stage": "Q2D-R2-MultiSeed-Extension",
+  "status": "PASS",
+  "purpose": "Train only the two additional R2 seeds. No ensemble and no new model architecture in this stage.",
+  "frozen_original_seed": 2026,
+  "new_training_seeds": [
+    2027,
+    2028
+  ],
+  "design_frozen": {
+    "architecture": true,
+    "losses": true,
+    "augmentation": true,
+    "optimizer_hyperparameters": true,
+    "validation_missing_seed": 20260924,
+    "q2c_used_for_early_stopping": false,
+    "attachment3_used": false
+  },
+  "launcher_runs": [
+    {
+      "seed": 2027,
+      "return_code": 0,
+      "start_time": "2026-09-25T19:12:56.275130",
+      "end_time": "2026-09-25T19:17:11.859591",
+      "output_dir": "D:\\Desktop\\shumo\\E题数据\\Q2D_R2_MultiSeed_outputs\\seed_2027"
+    },
+    {
+      "seed": 2028,
+      "return_code": 0,
+      "start_time": "2026-09-25T19:17:11.860591",
+      "end_time": "2026-09-25T19:20:33.033599",
+      "output_dir": "D:\\Desktop\\shumo\\E题数据\\Q2D_R2_MultiSeed_outputs\\seed_2028"
+    }
+  ],
+  "reference_seed_2026": {
+    "status": "PASS",
+    "training_seed": null,
+    "best_epoch": 7,
+    "best_selection_score": 0.6763473104765205,
+    "clean_valid": {
+      "accuracy": 0.6291208791208791,
+      "macro_f1": 0.6169033433621594,
+      "mae": 0.5898934602737427,
+      "pearson": 0.6639517968975472
+    },
+    "clean_test": {
+      "accuracy": 0.657496561210454,
+      "macro_f1": 0.6310147356658984,
+      "mae": 0.6379991173744202,
+      "pearson": 0.6802025850857815
+    },
+    "task_matched_AV": {
+      "r1_mean_accuracy": 0.6211843711843712,
+      "r1_mean_macro_f1": 0.6104281303828081,
+      "r1_mean_mae": 0.5885622911983066,
+      "r1_mean_pearson": 0.6624664910805858,
+      "r1_worst_accuracy": 0.6057692307692307,
+      "mean_accuracy_gain": 0.012301587301587312,
+      "mean_macro_f1_gain": 0.008596057760819379,
+      "mean_mae_reduction": -0.002274351649814182,
+      "mean_pearson_gain": 0.010689966246436004
+    },
+    "summary_path": "D:\\Desktop\\shumo\\E题数据\\Q2D_R2_AV_MultiGap_outputs\\Q2D_R2_AV_MultiGap_summary.json"
+  },
+  "new_seed_results": {
+    "2027": {
+      "status": "PASS",
+      "training_seed": 2027,
+      "best_epoch": 7,
+      "best_selection_score": 0.6768604830533291,
+      "clean_valid": {
+        "accuracy": 0.6277472527472527,
+        "macro_f1": 0.617581362119397,
+        "mae": 0.6042718887329102,
+        "pearson": 0.6600244325667375
+      },
+      "clean_test": {
+        "accuracy": 0.656121045392022,
+        "macro_f1": 0.6316177226932365,
+        "mae": 0.6496555805206299,
+        "pearson": 0.6851298946023325
+      },
+      "task_matched_AV": {
+        "r1_mean_accuracy": 0.6279304029304029,
+        "r1_mean_macro_f1": 0.6167006961884135,
+        "r1_mean_mae": 0.6058768484327528,
+        "r1_mean_pearson": 0.6609242003833633,
+        "r1_worst_accuracy": 0.614010989010989,
+        "mean_accuracy_gain": 0.019047619047619035,
+        "mean_macro_f1_gain": 0.014868623566424774,
+        "mean_mae_reduction": -0.01958890888426039,
+        "mean_pearson_gain": 0.009147675549213613
+      },
+      "summary_path": "D:\\Desktop\\shumo\\E题数据\\Q2D_R2_MultiSeed_outputs\\seed_2027\\Q2D_R2_AV_MultiGap_summary.json"
+    },
+    "2028": {
+      "status": "PASS",
+      "training_seed": 2028,
+      "best_epoch": 3,
+      "best_selection_score": 0.6761458390261128,
+      "clean_valid": {
+        "accuracy": 0.6195054945054945,
+        "macro_f1": 0.6098124098124097,
+        "mae": 0.5765798091888428,
+        "pearson": 0.6722288750072771
+      },
+      "clean_test": {
+        "accuracy": 0.6698762035763411,
+        "macro_f1": 0.6476821466045255,
+        "mae": 0.6163750886917114,
+        "pearson": 0.6832480625468479
+      },
+      "task_matched_AV": {
+        "r1_mean_accuracy": 0.6148656898656899,
+        "r1_mean_macro_f1": 0.606580618392119,
+        "r1_mean_mae": 0.5764771382013957,
+        "r1_mean_pearson": 0.6720111397523932,
+        "r1_worst_accuracy": 0.6016483516483516,
+        "mean_accuracy_gain": 0.005982905982906014,
+        "mean_macro_f1_gain": 0.004748545770130177,
+        "mean_mae_reduction": 0.00981080134709676,
+        "mean_pearson_gain": 0.02023461491824366
+      },
+      "summary_path": "D:\\Desktop\\shumo\\E题数据\\Q2D_R2_MultiSeed_outputs\\seed_2028\\Q2D_R2_AV_MultiGap_summary.json"
+    }
+  },
+  "next_stage_note": "After inspecting 2027/2028, build the 3-seed prediction ensemble in a separate stage. This script intentionally does not ensemble."
+}
