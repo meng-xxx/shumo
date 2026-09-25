@@ -1,0 +1,25 @@
+{
+  "classification_weights": {
+    "seed_2026": 0.7,
+    "seed_2027": 0.2,
+    "seed_2028": 0.1
+  },
+  "regression_weights": {
+    "seed_2026": 0.1,
+    "seed_2027": 0.0,
+    "seed_2028": 0.9
+  },
+  "regression_search_note": "BEST_FEASIBLE_RAW_REGRESSION_MIXTURE",
+  "global_calibration": {
+    "a": 0.9009999999999999,
+    "b": -0.012816688156127909,
+    "fit_mae": 0.5720285688756095,
+    "fit_pearson": 0.6722309142953103
+  },
+  "fit_contract": {
+    "weights_selected_on": "Clean Validation + Q2C2 only",
+    "test_used_for_selection": false,
+    "attachment3_used": false,
+    "calibration_labels": "Attachment2 validation only: clean + fixed independent AV-missing"
+  }
+}

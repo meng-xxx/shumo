@@ -1,0 +1,17 @@
+{
+  "decision": "SELECT_TASK_SPECIFIC_WEIGHTED_ENSEMBLE",
+  "selection_data": "Clean Validation + Q2C2 only; Test excluded",
+  "checks": {
+    "clean_valid_accuracy_preserved": true,
+    "clean_valid_f1_preserved": true,
+    "q2c2_accuracy_not_worse": true,
+    "q2c2_f1_not_worse": true,
+    "q2c2_calibrated_mae_not_worse": true,
+    "q2c2_raw_pearson_preserved": true,
+    "q2c2_worst_accuracy_preserved": true
+  },
+  "q2c2_worst_accuracy": {
+    "task_specific": 0.6126373626373627,
+    "seed_2028": 0.603021978021978
+  }
+}
