@@ -1,0 +1,107 @@
+{
+  "stage": "Q2F-HybridFinal-TerminalAware",
+  "status": "PASS",
+  "timestamp": "2026-09-25T23:22:28.922297",
+  "contracts": {
+    "model_training": false,
+    "pseudo_labels": false,
+    "attachment3_label_use": false,
+    "weight_search": false,
+    "classification_model": "Q2D-R2 Seed 2028",
+    "regression_model": "0.1*Q2D-R2 Seed2026 + 0.9*Q2D-R2 Seed2028",
+    "seed2026_checkpoint": "D:\\Desktop\\shumo\\E题数据\\Q2D_R2_AV_MultiGap_outputs\\checkpoints\\Q2D_R2_AV_MultiGap_best_model.pt",
+    "seed2028_checkpoint": "D:\\Desktop\\shumo\\E题数据\\Q2D_R2_MultiSeed_outputs\\seed_2028\\checkpoints\\Q2D_R2_AV_MultiGap_best_model.pt",
+    "hybrid_config": "D:\\Desktop\\shumo\\E题数据\\Q2D_R2_HybridFinal_Confirmation_outputs\\Q2D_R2_HybridFinal_config.json",
+    "final_mask_policy": "auto",
+    "native_zero_automatically_missing": false,
+    "derived_mask_fallback_if_no_explicit_mask": "terminal-aware: last attended position excluded only from missing detection; joint A+V zero rows plus unilateral zero runs >=2 elsewhere"
+  },
+  "hybrid_definition": {
+    "classification": "seed_2028",
+    "regression_weights": {
+      "seed_2026": 0.1,
+      "seed_2027": 0.0,
+      "seed_2028": 0.9
+    },
+    "global_calibration": {
+      "a": 0.9009999999999999,
+      "b": -0.012816688156127909
+    }
+  },
+  "checkpoint_meta": {
+    "seed_2026": {
+      "epoch": 7,
+      "checkpoint_keys": [
+        "stage",
+        "timestamp",
+        "epoch",
+        "selection_score",
+        "clean_valid_metrics",
+        "missing_valid_metrics",
+        "model_state_dict",
+        "optimizer_state_dict",
+        "config"
+      ]
+    },
+    "seed_2028": {
+      "epoch": 3,
+      "checkpoint_keys": [
+        "stage",
+        "timestamp",
+        "epoch",
+        "selection_score",
+        "clean_valid_metrics",
+        "missing_valid_metrics",
+        "model_state_dict",
+        "optimizer_state_dict",
+        "config"
+      ]
+    }
+  },
+  "sample_count": 30,
+  "class_counts": {
+    "Negative": 9,
+    "Neutral": 11,
+    "Positive": 10
+  },
+  "intensity": {
+    "mean": 0.0983940606180827,
+    "std": 0.5783486839347111,
+    "min": -1.1504171764373776,
+    "max": 1.529969835281372
+  },
+  "hybrid_vs_seed2028_raw_regression": {
+    "mean_signed_delta": 0.0008656565348307297,
+    "mean_abs_delta": 0.014716008504231777,
+    "max_abs_delta": 0.04306640625000013
+  },
+  "bert_reproduction_gate": {
+    "status": "PASS",
+    "samples": 4,
+    "max_abs_error": 0.020874500274658203,
+    "mean_abs_error": 0.00028936986927874386,
+    "correlation": 0.9999996287472483,
+    "thresholds": {
+      "max_abs_tol": 0.025,
+      "mean_abs_tol": 0.003,
+      "corr_min": 0.9995
+    },
+    "bert_model": "bert-base-uncased"
+  },
+  "terminal_mask_gate": {
+    "status": "PASS",
+    "terminal_attended_position_excluded_from_missing_detection": true,
+    "terminal_audio_all_zero_count": 30,
+    "terminal_vision_all_zero_count": 30,
+    "mean_audited_audio_missing_rate": 0.254818895821133,
+    "mean_audited_vision_missing_rate": 0.25784919885143603,
+    "mean_model_audio_missing_rate": 0.24096395806429796,
+    "mean_model_vision_missing_rate": 0.2439051345348862
+  },
+  "mask_summary": {
+    "explicit_mask_samples": 0,
+    "derived_mask_samples": 30,
+    "mean_audited_audio_missing_rate": 0.254818895821133,
+    "mean_audited_vision_missing_rate": 0.25784919885143603
+  }
+}

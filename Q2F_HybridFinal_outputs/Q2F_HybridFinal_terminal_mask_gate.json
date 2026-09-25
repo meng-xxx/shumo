@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "terminal_attended_position_excluded_from_missing_detection": true,
+  "terminal_audio_all_zero_count": 30,
+  "terminal_vision_all_zero_count": 30,
+  "mean_audited_audio_missing_rate": 0.254818895821133,
+  "mean_audited_vision_missing_rate": 0.25784919885143603,
+  "mean_model_audio_missing_rate": 0.24096395806429796,
+  "mean_model_vision_missing_rate": 0.2439051345348862
+}

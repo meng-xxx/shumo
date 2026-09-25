@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "samples": 4,
+  "max_abs_error": 0.020874500274658203,
+  "mean_abs_error": 0.00028936986927874386,
+  "correlation": 0.9999996287472483,
+  "thresholds": {
+    "max_abs_tol": 0.025,
+    "mean_abs_tol": 0.003,
+    "corr_min": 0.9995
+  },
+  "bert_model": "bert-base-uncased"
+}
