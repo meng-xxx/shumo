@@ -1,0 +1,23 @@
+{
+  "decision": "KEEP_SEED_2028_SINGLE_REFERENCE",
+  "selection_data": "Clean Validation + Q2C2 only; Clean Test excluded",
+  "checks": {
+    "clean_valid_f1_preserved": true,
+    "clean_valid_accuracy_preserved": true,
+    "q2c2_f1_not_worse": true,
+    "q2c2_accuracy_preserved": true,
+    "q2c2_calibrated_mae_not_worse": true,
+    "q2c2_calibrated_pearson_preserved": false,
+    "q2c2_worst_accuracy_preserved": true
+  },
+  "thresholds": {
+    "f1_tolerance": 0.002,
+    "accuracy_tolerance": 0.002,
+    "pearson_tolerance": 0.002,
+    "worst_accuracy_tolerance": 0.005
+  },
+  "q2c2_worst_accuracy": {
+    "ensemble": 0.6112637362637363,
+    "seed_2028": 0.603021978021978
+  }
+}

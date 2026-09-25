@@ -1,0 +1,36 @@
+{
+  "ensemble_members": [
+    "seed_2026",
+    "seed_2027",
+    "seed_2028"
+  ],
+  "weights": {
+    "seed_2026": 0.3333333333333333,
+    "seed_2027": 0.3333333333333333,
+    "seed_2028": 0.3333333333333333
+  },
+  "checkpoints": {
+    "seed_2026": {
+      "path": "D:\\Desktop\\shumo\\E题数据\\Q2D_R2_AV_MultiGap_outputs\\checkpoints\\Q2D_R2_AV_MultiGap_best_model.pt",
+      "epoch": 7,
+      "selection_score": 0.6763473104765205,
+      "stage": "Q2D-R2-AV-MultiGap",
+      "config_seed": 2026
+    },
+    "seed_2027": {
+      "path": "D:\\Desktop\\shumo\\E题数据\\Q2D_R2_MultiSeed_outputs\\seed_2027\\checkpoints\\Q2D_R2_AV_MultiGap_best_model.pt",
+      "epoch": 7,
+      "selection_score": 0.6768604830533291,
+      "stage": "Q2D-R2-AV-MultiGap",
+      "config_seed": 2027
+    },
+    "seed_2028": {
+      "path": "D:\\Desktop\\shumo\\E题数据\\Q2D_R2_MultiSeed_outputs\\seed_2028\\checkpoints\\Q2D_R2_AV_MultiGap_best_model.pt",
+      "epoch": 3,
+      "selection_score": 0.6761458390261128,
+      "stage": "Q2D-R2-AV-MultiGap",
+      "config_seed": 2028
+    }
+  },
+  "neural_training": false
+}

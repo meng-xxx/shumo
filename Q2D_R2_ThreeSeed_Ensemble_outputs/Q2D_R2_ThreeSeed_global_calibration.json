@@ -1,0 +1,21 @@
+{
+  "fit_contract": {
+    "labels": "Attachment2 validation only",
+    "fit_rows": "50% clean validation + 50% independent fixed AV-missing validation",
+    "validation_reporting": "5-fold sample-level OOF",
+    "test_and_future": "global validation-fitted coefficients",
+    "attachment3_used": false
+  },
+  "ensemble": {
+    "a": 0.812,
+    "b": 0.004408392071723964,
+    "fit_mae": 0.5706822331976213,
+    "fit_pearson": 0.6676748287806845
+  },
+  "seed_2028": {
+    "a": 0.9089999999999999,
+    "b": -0.013608474373817459,
+    "fit_mae": 0.5727622165678294,
+    "fit_pearson": 0.6720417542992592
+  }
+}
