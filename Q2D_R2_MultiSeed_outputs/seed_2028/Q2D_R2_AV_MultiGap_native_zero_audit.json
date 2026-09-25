@@ -1,0 +1,5 @@
+{
+  "train_audio_zero_inside_valid_ratio": 0.08192704847499761,
+  "train_vision_zero_inside_valid_ratio": 0.131931829046754,
+  "rule": "native zero != missing; only synthetic_missing changes observed_mask during training"
+}
