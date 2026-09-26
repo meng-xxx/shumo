@@ -1,0 +1,14 @@
+{
+  "sample_count": 20,
+  "thresholds": {
+    "max_abs_error": 0.025,
+    "mean_abs_error": 0.003,
+    "correlation": 0.9995
+  },
+  "observed": {
+    "max_abs_error": 5.817413330078125e-05,
+    "mean_abs_error": 7.564970771749101e-07,
+    "min_correlation": 0.9999999999983983
+  },
+  "passed": true
+}

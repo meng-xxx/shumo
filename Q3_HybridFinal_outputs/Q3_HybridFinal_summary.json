@@ -1,0 +1,80 @@
+{
+  "decision": "PASS_Q3_HYBRID_FINAL",
+  "samples": 20,
+  "runtime_seconds": 42.21738624572754,
+  "gates": {
+    "predictor_contract_pass": true,
+    "bert_reproduction_pass": true,
+    "predictions_complete": true,
+    "coalitions_8_of_8_complete": true,
+    "shapley_efficiency_pass": true,
+    "local_explanations_complete": true,
+    "fidelity_complete": true,
+    "explanation_cards_complete": true,
+    "representative_frames_complete": true,
+    "checkpoints_unchanged": true,
+    "labels_used": false,
+    "training": false,
+    "pseudo_labels": false,
+    "manual_prediction_edits": false
+  },
+  "class_distribution": {
+    "Positive": 9,
+    "Negative": 7,
+    "Neutral": 4
+  },
+  "main_modality_cls_distribution": {
+    "T": 20
+  },
+  "main_modality_reg_distribution": {
+    "T": 15,
+    "V": 4,
+    "A": 1
+  },
+  "max_shapley_efficiency_residual": 2.220446049250313e-16,
+  "fidelity": {
+    "classification_top": {
+      "mean": 0.3076453097164631,
+      "median": 0.33989647030830383,
+      "ci95_low": 0.23834069842472674,
+      "ci95_high": 0.37724353332072486
+    },
+    "classification_random": {
+      "mean": 0.15324204157292845,
+      "median": 0.1192953234910965,
+      "ci95_low": 0.09954339771308005,
+      "ci95_high": 0.20862912043631074
+    },
+    "classification_top_minus_random": {
+      "mean": 0.15440326814353464,
+      "median": 0.1322927063703537,
+      "ci95_low": 0.09905657270886005,
+      "ci95_high": 0.2157383651401847
+    },
+    "regression_top": {
+      "mean": 0.630038902127836,
+      "median": 0.4239055030569434,
+      "ci95_low": 0.4072886551257037,
+      "ci95_high": 0.867324006949712
+    },
+    "regression_random": {
+      "mean": 0.38706253784023625,
+      "median": 0.21192117430709304,
+      "ci95_low": 0.2124158186408836,
+      "ci95_high": 0.6073213891662446
+    },
+    "regression_top_minus_random": {
+      "mean": 0.24297636428759956,
+      "median": 0.14251648809947076,
+      "ci95_low": 0.12883203511783545,
+      "ci95_high": 0.3705719770432931
+    },
+    "samples": 20,
+    "random_repeats": 50
+  },
+  "baseline_stability": {
+    "cls_top1_agreement": 0.95,
+    "reg_top1_agreement": 0.75,
+    "local_overlap_mean": 0.47823361061874287
+  }
+}

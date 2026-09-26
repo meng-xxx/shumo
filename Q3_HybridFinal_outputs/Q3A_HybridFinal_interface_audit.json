@@ -1,0 +1,41 @@
+{
+  "stage": "Q3A_HybridFinal",
+  "sample_count": 20,
+  "unique_sample_ids": 20,
+  "all_shapes_pass": true,
+  "explicit_masks_present": false,
+  "attention_masks_valid": true,
+  "av_finite": true,
+  "seed2026_strict_load": true,
+  "seed2028_strict_load": true,
+  "classification_source": "seed_2028",
+  "regression_sources": [
+    "seed_2026",
+    "seed_2028"
+  ],
+  "hybrid_config_match": true,
+  "bert_gate_pass": true,
+  "predictor_reproduction": {
+    "classification_source": "seed_2028",
+    "regression_formula": "0.1*seed2026 + 0.9*seed2028",
+    "calibration_a": 0.901,
+    "calibration_b": -0.012816688156127909,
+    "max_abs_raw_regression_error": 0.0,
+    "max_abs_final_regression_error": 0.0,
+    "passed": true
+  },
+  "training": false,
+  "attachment4_labels_used": false,
+  "pseudo_labels": false,
+  "checkpoint_sha256_before": {
+    "checkpoint2026": "512515504e0e8a266cb3ef403a7f1aff5275d2df4fd572ccef3d519ebcb824aa",
+    "checkpoint2028": "4f68b42486f82b5ef44a0558ce8dc1124db5fdca69505ceb345259351c24ae84",
+    "normalization": "74cd2807f7661742721b96d889255a9e1bf82403a0979c7bacd4d1578dfaaa63"
+  },
+  "checkpoint_sha256_after": {
+    "checkpoint2026": "512515504e0e8a266cb3ef403a7f1aff5275d2df4fd572ccef3d519ebcb824aa",
+    "checkpoint2028": "4f68b42486f82b5ef44a0558ce8dc1124db5fdca69505ceb345259351c24ae84",
+    "normalization": "74cd2807f7661742721b96d889255a9e1bf82403a0979c7bacd4d1578dfaaa63"
+  },
+  "passed": true
+}
